@@ -34,3 +34,8 @@ class ProfileView extends StatelessWidget {
     );
   }
 }
+
+// Navigator.push(context,
+//                         MaterialPageRoute(builder: (context) {
+//                       return PokemonDetailView();
+//                     }));

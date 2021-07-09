@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/Views/ProfileView.dart';
-import 'Views/HomeView.dart';
+import 'Views/PokemonListView.dart';
 import 'Views/ProfileView.dart';
 
 class Nav extends StatefulWidget {
@@ -13,7 +13,7 @@ class Nav extends StatefulWidget {
 class _NavState extends State<Nav> {
   int _currentIndex = 0;
   final List<Widget> _children = [
-    HomeView(),
+    PokemonListView(),
     ProfileView(),
   ];
 
