@@ -14,19 +14,17 @@ class PokemonDetailView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Pokemon Detail Screen'),
+        title: Text(this.pokemonData.name ?? 'Pokemon Detail View'),
+        centerTitle: true,
       ),
       body: Column(
         children: [
           Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Image.network('${this.image}'),
-                Text('asdasd'),
-                Text('asdasd'),
-                Text('asdasd'),
-              ],
+            child: Image.network(
+              '${this.pokemonData.image}',
+              height: 300,
+              width: 300,
+              fit: BoxFit.fill,
             ),
           ),
         ],
